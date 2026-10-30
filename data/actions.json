@@ -1,0 +1,94 @@
+{
+  "abilities": {
+    "fireball": {
+      "name": "火球术",
+      "cooldown_frames": 0,
+      "mana_cost": 10,
+      "windup_frames": 30,
+      "recovery_frames": 18,
+      "effects": [
+        {
+          "type": "spawn",
+          "template": "fireball"
+        }
+      ]
+    },
+    "fireball_full": {
+      "name": "全力火球术", "mode": "full", "cooldown_frames": 0,
+      "mana_cost": 30, "power_base": 10, "damage_multiplier": 2,
+      "windup_frames": 30, "recovery_frames": 18,
+      "effects": [{"type": "spawn", "template": "fireball"}]
+    },
+    "shield": {
+      "name": "护盾术",
+      "cooldown_frames": 1200,
+      "mana_cost": 50,
+      "windup_frames": 30,
+      "recovery_frames": 18,
+      "effects": [
+        {
+          "type": "spawn",
+          "template": "shield"
+        }
+      ]
+    },
+    "qingyun_sword": {
+      "name": "青云剑",
+      "cooldown_frames": 1200,
+      "mana_cost": 10,
+      "windup_frames": 30,
+      "recovery_frames": 18,
+      "effects": [
+        {
+          "type": "spawn",
+          "template": "qingyun_sword"
+        }
+      ]
+    },
+    "sword_attack": {
+      "name": "剑击",
+      "cooldown_frames": 180,
+      "mana_cost": 0,
+      "windup_frames": 6,
+      "recovery_frames": 0,
+      "inherit_power": true,
+      "effects": [
+        {
+          "type": "strike",
+          "outbound_frames": 45,
+          "return_frames": 45
+        }
+      ]
+    }
+  },
+  "templates": {
+    "fireball": {
+      "name": "火球",
+      "kind": "projectile",
+      "mind_cost": 0,
+      "duration_frames": 24,
+      "on_end": [
+        {
+          "type": "damage"
+        }
+      ]
+    },
+    "shield": {
+      "name": "护盾",
+      "kind": "shield",
+      "mind_cost": 1,
+      "hp_from_cost": true,
+      "intercept_priority": 2,
+      "duration_frames": -1
+    },
+    "qingyun_sword": {
+      "name": "青云剑",
+      "kind": "artifact",
+      "mind_cost": 1,
+      "hp": 20,
+      "intercept_priority": 1,
+      "duration_frames": 420,
+      "actions": {"sword_attack": {}}
+    }
+  }
+}

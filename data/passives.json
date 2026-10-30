@@ -1,0 +1,10 @@
+{
+  "innate_shield": {
+    "name": "护体灵光",
+    "triggers": {
+      "battle_start": [
+        {"type": "spawn", "template": "shield", "overrides": {"hp": 20, "hp_from_cost": false}}
+      ]
+    }
+  }
+}

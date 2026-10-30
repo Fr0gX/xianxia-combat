@@ -1,0 +1,11 @@
+.godot/
+.engine/
+captures/
+test-results.json
+test-ui-results.json
+test-framework-results.json
+test-timing-results.json
+test-sword-results.json
+test-drag-summary-results.json
+test-passives-results.json
+*.log

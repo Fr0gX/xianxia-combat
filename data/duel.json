@@ -1,0 +1,23 @@
+{
+  "ticks_per_second": 60,
+  "cast_interval_frames": 90,
+  "shield_cooldown_frames": 1200,
+  "sword_cooldown_frames": 1200,
+  "sword_windup_frames": 6,
+  "sword_attack_cooldown_frames": 180,
+  "sword_outbound_frames": 45,
+  "sword_return_frames": 45,
+  "max_frames": 7200,
+  "spell": {
+    "id": "basic_fireball",
+    "name": "基础·火球术",
+    "mana_cost": 10,
+    "windup_frames": 30,
+    "flight_frames": 24,
+    "recovery_frames": 18
+  },
+  "actors": [
+    { "id": "left", "name": "青衫修士", "realm": "练气前期", "hp": 20, "mana": 100, "mind_capacity": 2, "quality_permille": 1000, "actions": {"shield": {}, "qingyun_sword": {}, "fireball": {}}, "passives": {} },
+    { "id": "right", "name": "赤衣修士", "realm": "练气中期", "hp": 20, "mana": 200, "mind_capacity": 4, "quality_permille": 1500, "actions": {"fireball": {}}, "passives": {"innate_shield": {"source": {"kind": "realm", "name": "练气中期"}}} }
+  ]
+}
